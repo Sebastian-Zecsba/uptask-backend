@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken'
-import Types from 'mongoose'
+import mongoose from 'mongoose'
 
 type UserPayload = {
-    id: Types.ObjectId
+    id: mongoose.Schema.Types.ObjectId
 }
 
 export const generateJWT = (payload : UserPayload) => {
