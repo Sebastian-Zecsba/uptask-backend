@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "dev:api": "nodemon --exec ts-node src/index.ts --api",
-    "build": "tsc",
-    "start": "node ./dist/index.js"
+    "start": "nodemon --exec ts-node src/index.ts",
+    "dev:api": "nodemon --exec ts-node src/index.ts --api"
   },
   "keywords": [],
   "author": "",
@@ -34,8 +32,5 @@
     "nodemon": "^3.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
-  },
-  "engines": {
-    "node": "16.x"
   }
 }
