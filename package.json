@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm rebuild bcrypt --build-from-source",
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
     "dev:api": "npm run build && node dist/index.js --api"
