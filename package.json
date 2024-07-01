@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon --exec npx ts-node src/index.ts",
-    "dev:api": "npx nodemon --exec npx ts-node src/index.ts --api",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev:api": "npm run build && node dist/index.js --api"
   },
   "keywords": [],
   "author": "",
