@@ -7,9 +7,7 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "dev:api": "nodemon --exec ts-node src/index.ts --api",
     "build": "tsc",
-    "start": "node ./dist/index.js",
-    "postinstall": "npm rebuild bcrypt --build-from-source",
-    "preinstall": "chmod -R 755 ./node_modules/bcrypt"
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +26,7 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
