@@ -8,13 +8,14 @@
     "dev:api": "nodemon --exec ts-node src/index.ts --api",
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "postinstall": "npm rebuild bcrypt --build-from-source"
+    "postinstall": "npm rebuild bcrypt --build-from-source",
+    "preinstall": "chmod -R 755 ./node_modules/bcrypt"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
