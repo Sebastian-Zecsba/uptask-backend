@@ -16,7 +16,9 @@ app.use(cors())
 
 // Logging
 app.use(morgan('dev'))
-
+app.get('/', (req, res) => {
+    res.send('Test de railway y render')
+})
 // Leer datos de formulario
 app.use(express.json())
 
