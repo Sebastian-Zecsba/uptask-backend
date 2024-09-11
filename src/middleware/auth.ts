@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express"
-import jwt, { decode } from 'jsonwebtoken'
+import jwt from 'jsonwebtoken'
 import User, { IUser } from "../models/Auth"
 
 declare global {
